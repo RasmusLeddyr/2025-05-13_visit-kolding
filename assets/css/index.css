@@ -87,4 +87,18 @@ h4 {
 #events {
   background-color: var(--col_main2);
 }
+#events h1 {
+  color: white;
+}
+#events section {
+  display: flex;
+}
+#events .title {
+  color: white;
+}
+#events .title span {
+  color: white;
+  font-size: 60px;
+  font-weight: var(--fw_medium);
+}
 /* EVENTS */
