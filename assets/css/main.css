@@ -1,0 +1,62 @@
+/* DEFAULTS */
+*,
+*::before,
+*::after,
+*::placeholder {
+  margin: 0;
+  padding: 0%;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  resize: none;
+  font-size: 16px;
+  font-weight: normal;
+  color: black;
+  background-color: rgba(0, 0, 0, 0);
+
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* DEFAULTS */
+
+/* VARIABLES */
+:root {
+  --wireframe-width: 1920;
+
+  /*font weights*/
+  --fw_thin: 100;
+  --fw_extra-light: 200;
+  --fw_light: 300;
+  --fw_normal: 400;
+  --fw_medium: 500;
+  --fw_semi-bold: 600;
+  --fw_bold: 700;
+  --fw_extra-bold: 800;
+  --fw_heavy: 900;
+
+  /*colours*/
+  --col_main1: #ff9964;
+  --col_main2: #441dac;
+  --col_main3: #6fccd3;
+}
+/* VARIABLES */
+
+/* PAGE PADDING */
+.page-padding {
+  padding-left: calc((358 / var(--wireframe-width)) * 100%);
+  padding-right: calc((358 / var(--wireframe-width)) * 100%);
+}
+/* NAV */
+#nav {
+  background-color: var(--col_main1);
+  display: flex;
+  align-items: center;
+}
+#nav .title {
+  max-width: 276px;
+  flex-shrink: 0;
+}
+#nav .title img {
+  width: 100%;
+}
+/* NAV */
