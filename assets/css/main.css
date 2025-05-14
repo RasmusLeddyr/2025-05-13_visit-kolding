@@ -21,7 +21,8 @@
 
 /* VARIABLES */
 :root {
-  --wireframe-width: 1920;
+  /*wire-frame widths*/
+  --base-width: 1920;
 
   /*font weights*/
   --fw_thin: 100;
@@ -40,47 +41,7 @@
   --col_main3: #6fccd3;
   --col_blank: rgb(223, 223, 223);
   --col_txt: #707070;
+  --col_txt2: rgb(255, 255, 255);
+  --col_txt3: rgb(0, 0, 0);
 }
 /* VARIABLES */
-
-/* PAGE PADDING */
-.page-padding {
-  padding-left: calc((358 / var(--wireframe-width)) * 100%);
-  padding-right: calc((358 / var(--wireframe-width)) * 100%);
-}
-/* NAV */
-#nav {
-  background-color: var(--col_main1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-#nav .title {
-  flex-shrink: 0;
-  max-width: 276px;
-  margin-right: calc((210 / var(--wireframe-width)) * 100%);
-}
-#nav .title img {
-  width: 100%;
-}
-#nav ul {
-  display: flex;
-  gap: 64px;
-  margin-right: calc((146 / var(--wireframe-width)) * 100%);
-}
-#nav ul a {
-  font-size: 10px;
-  font-weight: var(--fw_medium);
-  color: white;
-}
-#nav .search {
-  width: 18px;
-}
-#nav .search img {
-  width: 100%;
-  margin-top: 8px;
-}
-/* NAV */

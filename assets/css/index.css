@@ -1,3 +1,15 @@
+/* LINK OTHER CSS FILES */
+@import url("navigation.css");
+@import url("footer.css");
+/* LINK OTHER CSS FILES */
+
+/* PAGE PADDING */
+.page-padding {
+  padding-left: calc((358 / var(--base-width)) * 100%);
+  padding-right: calc((358 / var(--base-width)) * 100%);
+}
+/* PAGE PADDING */
+
 /* TEXT */
 h1 {
   font-size: 30px;
@@ -166,7 +178,7 @@ h4 {
 #explore article {
   padding-top: 140px;
   padding-bottom: 95px;
-  margin-right: calc((95 / var(--wireframe-width)) * 100%);
+  margin-right: calc((95 / var(--base-width)) * 100%);
 }
 #explore article h1 {
   margin-bottom: 26px;
