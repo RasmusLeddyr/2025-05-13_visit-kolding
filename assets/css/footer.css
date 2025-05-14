@@ -1,4 +1,50 @@
 /* ! unexplainable, undetectable margin above footer */
 #footer .media {
   background-color: var(--col_main3);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 83px;
+  padding-bottom: 83px;
+  row-gap: 64px;
+  column-gap: 183px;
+}
+#footer .media h1 {
+  color: var(--col_txt2);
+}
+#footer .media ul {
+  display: flex;
+  gap: 73px;
+  align-items: center;
+}
+#footer .media ul img {
+  width: 64px;
+}
+
+#footer .links {
+  background-color: var(--col_main2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer .links .title h2 {
+  color: var(--col_txt2);
+}
+#footer .links .title p {
+  color: var(--col_txt2);
+  font-size: 16px;
+  font-weight: var(--fw_medium);
+}
+
+#footer .links .link-section h4 {
+  color: var(--col_txt2);
+}
+#footer .links .link-section ul a {
+  color: var(--col_txt2);
+  font-size: 9px;
+  font-weight: var(fw_semi-bold);
+}
+
+#footer .cr {
+  background-color: var(--col_main);
 }
