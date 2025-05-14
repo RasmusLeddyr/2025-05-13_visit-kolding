@@ -10,7 +10,6 @@
   text-decoration: none;
   list-style: none;
   resize: none;
-  flex-shrink: 0;
   font-size: 16px;
   font-weight: normal;
   color: black;
@@ -60,6 +59,7 @@
   padding-bottom: 10px;
 }
 #nav .title {
+  flex-shrink: 0;
   max-width: 276px;
   margin-right: calc((210 / var(--wireframe-width)) * 100%);
 }

@@ -86,19 +86,74 @@ h4 {
 /* EVENTS */
 #events {
   background-color: var(--col_main2);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 #events h1 {
   color: white;
+  margin-bottom: 40px;
 }
-#events section {
+#events .event {
   display: flex;
+  align-items: start;
+  gap: 40px;
+  margin-bottom: 15px;
 }
 #events .title {
   color: white;
+  font-size: 15px;
+  font-weight: var(--fw_medium);
 }
 #events .title span {
+  /*! Ved ikke hvordan jeg får tekst til at være i toppen af dens div. */
   color: white;
   font-size: 60px;
   font-weight: var(--fw_medium);
 }
+#events .text {
+  max-width: 436px;
+  margin-right: auto;
+}
+#events .text p {
+  color: white;
+  width: 100%;
+}
+#events .text p:nth-of-type(1) {
+  margin-bottom: 22px;
+  font-size: 12px;
+  font-weight: var(--fw_medium);
+}
+#events .text p:nth-of-type(1) {
+  font-size: 13px;
+  font-weight: var(--fw_normal);
+}
+#events .event img {
+  background-color: var(--col_blank);
+  /*! S.O.S! Den vill ikke skalere! */
+  /* 
+  Hader CSS.
+  Det er fuldt af problemer, og er derfor så langsomt at arbejde med.
+  Man kan ikke engang bare løse problemerne på sin egen måde, ligesom man kan i JS, 
+  fordi man programmere ikke selv ting.
+
+  Nej, i stedet skal man kunne huske de helt bestemte, færdiglavede løsninger,
+  og hvis man ikke kender de unikke magiske ord, så er man bare screwed,
+  fordi man kan jo, igen, ikke skabe sin egen løsning.
+  */
+
+  /* Opdatering:
+  Det magiske ord var "flex-shrink: 0".
+  Skulle SELV prøve mig frem da der var *NUL* svar på hele internettet, 
+  som jeg har surfed igennem i så lang tid nu,
+  og ChatGPT blev ved med at komme op med forslag der slet ikke gjorde noget.
+  Jeg ville ønske at man havde bedre kontrol over elementer end CSS.
+  */
+  width: 391px;
+  height: 167px;
+  flex-shrink: 0;
+}
 /* EVENTS */
+
+#map {
+  width: 100%;
+}
