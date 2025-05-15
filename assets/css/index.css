@@ -372,59 +372,29 @@ h4 {
 
   /*events*/
   #events h1 {
-    text-align: center;
   }
   #events .event {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 35px;
   }
   #events .event img {
-    order: -1;
-    margin-bottom: 50px;
-    width: 100%;
-    height: calc((400 / 1180) * 100vw);
   }
   #events .desc {
-    display: flex;
+    /* ! Another invisible space issue. */
     flex-direction: column;
     align-items: center;
+    margin-right: 0;
+    justify-content: center;
   }
   #events .title {
-    --fs: 25;
-    font-size: clamp(
-      var(--fs) * 1px / 2,
-      calc(var(--fs) / var(--base-width)) * 100vw,
-      var(--fs) * 1px
-    );
+    margin-bottom: 20px;
   }
   #events .title span {
-    --fs: 91;
-    font-size: clamp(
-      var(--fs) * 1px / 2,
-      calc(var(--fs) / var(--base-width)) * 100vw,
-      var(--fs) * 1px
-    );
   }
   #events .text {
     text-align: center;
   }
   #events .text p:nth-of-type(1) {
-    --fs: 25;
-    font-size: clamp(
-      var(--fs) * 1px / 2,
-      calc(var(--fs) / var(--base-width)) * 100vw,
-      var(--fs) * 1px
-    );
   }
   #events .text p:nth-of-type(2) {
-    --fs: 25;
-    font-size: clamp(
-      var(--fs) * 1px / 2,
-      calc(var(--fs) / var(--base-width)) * 100vw,
-      var(--fs) * 1px
-    );
   }
   /*events*/
 }
