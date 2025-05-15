@@ -3,6 +3,12 @@
 @import url("footer.css");
 /* LINK OTHER CSS FILES */
 
+/* SET VARIABLES */
+:root {
+  --base-width: 1920;
+}
+/* SET VARIABLES FOR */
+
 /* PAGE PADDING */
 .page-padding {
   padding-left: calc((358 / var(--base-width)) * 100vw);
@@ -255,14 +261,17 @@ h4 {
   width: 100%;
 }
 
-/* MEDIA QUERIES */
-
+/* MEDIA QUERY TABLET */
 @media (max-width: 1280px) {
+  :root {
+    --base-width: 1280;
+  }
   .page-padding {
     padding-left: calc((50 / var(--base-width)) * 100vw);
     padding-right: calc((50 / var(--base-width)) * 100vw);
   }
 
+  /*hero*/
   #hero {
     grid-template-rows: repeat(6, 308px);
     grid-template-areas:
@@ -273,7 +282,9 @@ h4 {
       "art8 art8 art7"
       "art9 art10 art10";
   }
+  /*hero*/
 
+  /*events*/
   #events h1 {
     text-align: center;
   }
@@ -281,6 +292,7 @@ h4 {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-bottom: 35px;
   }
   #events .event img {
     order: -1;
@@ -288,14 +300,57 @@ h4 {
     width: 100%;
     height: calc((400 / 1180) * 100vw);
   }
+  #events .title {
+    --fs: 25;
+    font-size: clamp(
+      var(--fs) * 1px / 2,
+      calc(var(--fs) / var(--base-width)) * 100vw,
+      var(--fs) * 1px
+    );
+  }
+  #events .title span {
+    --fs: 91;
+    font-size: clamp(
+      var(--fs) * 1px / 2,
+      calc(var(--fs) / var(--base-width)) * 100vw,
+      var(--fs) * 1px
+    );
+  }
+  #events .text {
+    max-width: 100%;
+    text-align: left;
+  }
+  #events .text p:nth-of-type(1) {
+    --fs: 25;
+    font-size: clamp(
+      var(--fs) * 1px / 2,
+      calc(var(--fs) / var(--base-width)) * 100vw,
+      var(--fs) * 1px
+    );
+  }
+  #events .text p:nth-of-type(2) {
+    --fs: 25;
+    font-size: clamp(
+      var(--fs) * 1px / 2,
+      calc(var(--fs) / var(--base-width)) * 100vw,
+      var(--fs) * 1px
+    );
+  }
+  /*events*/
 }
+/* MEDIA QUERY TABLET */
 
+/* MEDIA QUERY PHONE */
 @media (max-width: 800px) {
+  :root {
+    --base-width: 800;
+  }
   .page-padding {
     padding-left: calc((25 / var(--base-width)) * 100vw);
     padding-right: calc((25 / var(--base-width)) * 100vw);
   }
 
+  /*hero*/
   #hero {
     grid-template-rows: repeat(13, 362px);
     grid-template-areas:
@@ -313,4 +368,64 @@ h4 {
       "art10 art10"
       "art10 art10";
   }
+  /*hero*/
+
+  /*events*/
+  #events h1 {
+    text-align: center;
+  }
+  #events .event {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  #events .event img {
+    order: -1;
+    margin-bottom: 50px;
+    width: 100%;
+    height: calc((400 / 1180) * 100vw);
+  }
+  #events .desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #events .title {
+    --fs: 25;
+    font-size: clamp(
+      var(--fs) * 1px / 2,
+      calc(var(--fs) / var(--base-width)) * 100vw,
+      var(--fs) * 1px
+    );
+  }
+  #events .title span {
+    --fs: 91;
+    font-size: clamp(
+      var(--fs) * 1px / 2,
+      calc(var(--fs) / var(--base-width)) * 100vw,
+      var(--fs) * 1px
+    );
+  }
+  #events .text {
+    text-align: center;
+  }
+  #events .text p:nth-of-type(1) {
+    --fs: 25;
+    font-size: clamp(
+      var(--fs) * 1px / 2,
+      calc(var(--fs) / var(--base-width)) * 100vw,
+      var(--fs) * 1px
+    );
+  }
+  #events .text p:nth-of-type(2) {
+    --fs: 25;
+    font-size: clamp(
+      var(--fs) * 1px / 2,
+      calc(var(--fs) / var(--base-width)) * 100vw,
+      var(--fs) * 1px
+    );
+  }
+  /*events*/
 }
+/* MEDIA QUERY PHONE */

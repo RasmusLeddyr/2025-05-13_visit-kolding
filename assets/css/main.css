@@ -21,9 +21,6 @@
 
 /* VARIABLES */
 :root {
-  /*wire-frame widths*/
-  --base-width: 1920;
-
   /*font weights*/
   --fw_thin: 100;
   --fw_extra-light: 200;
