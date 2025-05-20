@@ -3,14 +3,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 #nav .title {
   flex-shrink: 0;
   max-width: 276px;
-  margin-right: calc((210 / var(--base-width)) * 100%);
+  margin-right: calc((210 / var(--base-width)) * 100vw);
 }
 #nav .title img {
   width: 100%;
@@ -18,7 +17,7 @@
 #nav ul {
   display: flex;
   gap: 64px;
-  margin-right: calc((146 / var(--base-width)) * 100%);
+  margin-right: calc((146 / var(--base-width)) * 100vw);
 }
 #nav ul a {
   font-size: 10px;

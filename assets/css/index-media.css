@@ -1,0 +1,272 @@
+/* MEDIA QUERY TABLET */
+@media only screen and (max-width: 1280px) {
+  /* PAGE SETUP */
+  :root {
+    --base-width: 1280;
+  }
+  .page-padding {
+    padding-left: calc((50 / var(--base-width)) * 100vw);
+    padding-right: calc((50 / var(--base-width)) * 100vw);
+  }
+  /* PAGE SETUP */
+
+  /* TEXT */
+  h1 {
+    font-size: 30px;
+    font-weight: var(--fw_bold);
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: var(--fw_bold);
+  }
+  h3 {
+    font-size: 12px;
+    font-weight: var(--fw_bold);
+  }
+  h4 {
+    font-size: 10px;
+    font-weight: var(--fw_bold);
+  }
+  /* TEXT */
+
+  /* HERO */
+  #hero {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: grid;
+    gap: 15px;
+    grid-template-rows: repeat(4, 190px);
+    grid-template-areas:
+      "art1 art1 art2 art3 art3"
+      "art1 art1 art4 art5 art5"
+      "art6 art7 art7 art5 art5"
+      "art6 art8 art9 art9 art10";
+  }
+  #hero article {
+    background-color: var(--col_blank);
+    background-image: url(../img/main/placeholder.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    padding-bottom: 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 20px;
+  }
+  #hero article:nth-of-type(1) {
+    grid-area: art1;
+  }
+  #hero article:nth-of-type(2) {
+    grid-area: art2;
+  }
+  #hero article:nth-of-type(3) {
+    grid-area: art3;
+  }
+  #hero article:nth-of-type(4) {
+    grid-area: art4;
+  }
+  #hero article:nth-of-type(5) {
+    grid-area: art5;
+  }
+  #hero article:nth-of-type(6) {
+    grid-area: art6;
+  }
+  #hero article:nth-of-type(7) {
+    grid-area: art7;
+  }
+  #hero article:nth-of-type(8) {
+    grid-area: art8;
+  }
+  #hero article:nth-of-type(9) {
+    grid-area: art9;
+  }
+  #hero article:nth-of-type(10) {
+    grid-area: art10;
+  }
+  #hero article h3 {
+    color: var(--col_txt);
+  }
+  #hero article p {
+    color: var(--col_txt);
+    font-size: 9px;
+    font-weight: var(--fw_normal);
+  }
+  /* HERO */
+
+  /* EVENTS */
+  #events {
+    background-color: var(--col_main2);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  #events h1 {
+    color: white;
+    margin-bottom: 40px;
+  }
+  #events .event {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  #events .desc {
+    display: flex;
+    gap: 64px;
+    margin-right: calc((250 / var(--base-width)) * 100%);
+  }
+  #events .title {
+    color: white;
+    --fs: 15;
+    font-size: clamp(
+      var(--fs) * 1px / 2,
+      calc(var(--fs) / var(--base-width)) * 100vw,
+      var(--fs) * 1px
+    );
+    font-weight: var(--fw_medium);
+  }
+  #events .title span {
+    /*! Ved ikke hvordan jeg får tekst til at være i toppen af dens div. */
+    color: white;
+    --fs: 60;
+    font-size: clamp(
+      var(--fs) * 1px / 2,
+      calc(var(--fs) / var(--base-width)) * 100vw,
+      var(--fs) * 1px
+    );
+    font-weight: var(--fw_medium);
+  }
+  #events .text {
+    max-width: 436px;
+    margin-right: auto;
+  }
+  #events .text p {
+    color: white;
+    width: 100%;
+  }
+  #events .text p:nth-of-type(1) {
+    margin-bottom: 22px;
+    font-weight: var(--fw_medium);
+    --fs: 12;
+    font-size: clamp(
+      var(--fs) * 1px / 1.5,
+      calc(var(--fs) / var(--base-width)) * 100vw,
+      var(--fs) * 1px
+    );
+  }
+  #events .text p:nth-of-type(2) {
+    font-weight: var(--fw_normal);
+    --fs: 13;
+    font-size: clamp(
+      var(--fs) * 1px / 1.5,
+      calc(var(--fs) / var(--base-width)) * 100vw,
+      var(--fs) * 1px
+    );
+  }
+  #events .event img {
+    background-color: var(--col_blank);
+    /*! S.O.S! Den vill ikke skalere! */
+    /* 
+    Hader CSS.
+    Det er fuldt af problemer, og er derfor så langsomt at arbejde med.
+    Man kan ikke engang bare løse problemerne på sin egen måde, ligesom man kan i JS, 
+    fordi man programmere ikke selv ting.
+  
+    Nej, i stedet skal man kunne huske de helt bestemte, færdiglavede løsninger,
+    og hvis man ikke kender de unikke magiske ord, så er man bare screwed,
+    fordi man kan jo, igen, ikke skaber sin egen løsning.
+    */
+
+    /* Opdatering:
+    Det magiske ord var "flex-shrink: 0".
+    Skulle SELV prøve mig frem da der var *NUL* svar på hele internettet, 
+    som jeg har surfed igennem i så lang tid nu,
+    og ChatGPT blev ved med at komme op med forslag der slet ikke gjorde noget.
+    Jeg ville ønske at man havde bedre kontrol over elementer end CSS.
+    */
+    width: 391px;
+    height: 167px;
+    flex-shrink: 0;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  /* EVENTS */
+
+  /* EXPLORE */
+  #explore {
+    display: flex;
+    padding-top: 45px;
+    padding-bottom: 65px;
+  }
+  #explore article {
+    padding-top: 140px;
+    padding-bottom: 95px;
+    margin-right: calc((95 / var(--base-width)) * 100%);
+  }
+  #explore article h1 {
+    margin-bottom: 26px;
+    --fs: 30;
+    font-size: clamp(
+      var(--fs) * 1px / 2,
+      calc(var(--fs) / var(--base-width)) * 100vw,
+      var(--fs) * 1px
+    );
+    font-weight: var(--fw_bold);
+    max-width: calc((267 / var(--base-width)) * 100vw);
+  }
+  #explore article p {
+    --fs: 25;
+    font-size: clamp(
+      var(--fs) * 1px / 2,
+      calc(var(--fs) / var(--base-width)) * 100vw,
+      var(--fs) * 1px
+    );
+    font-weight: var(--fw_normal);
+    max-width: calc((392 / var(--base-width)) * 100vw);
+    color: var(--col_txt);
+  }
+  #explore ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px 15px;
+  }
+  #explore ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #explore ul img {
+    width: 229px;
+    height: 190px;
+    background-color: var(--col_blank);
+    padding: 16px;
+    box-sizing: border-box;
+    margin-bottom: 26px;
+  }
+  #explore ul p {
+    font-size: 12px;
+    font-weight: var(--fw_bold);
+    color: var(--col_txt);
+  }
+  /* EXPLORE */
+
+  #map {
+    width: 100%;
+  }
+}
+/* MEDIA QUERY TABLET */
+
+/* MEDIA QUERY PHONE */
+@media only screen and (max-width: 800px) {
+  /* PAGE SETUP */
+  :root {
+    --base-width: 1280;
+  }
+  .page-padding {
+    padding-left: calc((50 / var(--base-width)) * 100vw);
+    padding-right: calc((50 / var(--base-width)) * 100vw);
+  }
+  /* PAGE SETUP */
+}
+/* MEDIA QUERY PHONE */
