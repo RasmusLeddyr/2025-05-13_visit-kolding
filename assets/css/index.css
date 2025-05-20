@@ -1,21 +1,18 @@
 /* LINK OTHER CSS FILES */
 @import url("navigation.css");
 @import url("footer.css");
-@import url("index-media.css");
+@import url("index_media.css");
 /* LINK OTHER CSS FILES */
 
-/* SET VARIABLES */
+/* PAGE SETUP */
 :root {
   --base-width: 1920;
 }
-/* SET VARIABLES FOR */
-
-/* PAGE PADDING */
 .page-padding {
   padding-left: calc((358 / var(--base-width)) * 100vw);
   padding-right: calc((358 / var(--base-width)) * 100vw);
 }
-/* PAGE PADDING */
+/* PAGE SETUP */
 
 /* TEXT */
 h1 {
