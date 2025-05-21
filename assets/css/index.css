@@ -237,7 +237,7 @@ h4 {
 #explore article {
   padding-top: 140px;
   padding-bottom: 95px;
-  margin-right: calc((95 / var(--base-width)) * 100%);
+  margin-right: auto;
 }
 #explore article h1 {
   margin-bottom: 26px;
@@ -263,7 +263,7 @@ h4 {
 }
 #explore ul {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, calc((228 / var(--base-width)) * 100vw));
   grid-gap: 50px 15px;
 }
 #explore ul li {
@@ -272,8 +272,8 @@ h4 {
   align-items: center;
 }
 #explore ul img {
-  width: 229px;
-  height: 190px;
+  width: 100%;
+  height: calc((190 / var(--base-width)) * 100vw);
   background-color: var(--col_blank);
   padding: 16px;
   box-sizing: border-box;
