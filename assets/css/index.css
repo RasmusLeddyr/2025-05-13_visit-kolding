@@ -1,7 +1,6 @@
 /* LINK OTHER CSS FILES */
 @import url("navigation.css");
 @import url("footer.css");
-@import url("index_media.css");
 /* LINK OTHER CSS FILES */
 
 /* PAGE SETUP */
@@ -16,19 +15,39 @@
 
 /* TEXT */
 h1 {
-  font-size: 30px;
+  --fs: 30;
+  font-size: clamp(
+    var(--fs) * 1px / 2,
+    calc(var(--fs) / var(--base-width)) * 100vw,
+    var(--fs) * 1px
+  );
   font-weight: var(--fw_bold);
 }
 h2 {
-  font-size: 20px;
+  --fs: 20;
+  font-size: clamp(
+    var(--fs) * 1px / 2,
+    calc(var(--fs) / var(--base-width)) * 100vw,
+    var(--fs) * 1px
+  );
   font-weight: var(--fw_bold);
 }
 h3 {
-  font-size: 12px;
+  --fs: 12;
+  font-size: clamp(
+    var(--fs) * 1px / 2,
+    calc(var(--fs) / var(--base-width)) * 100vw,
+    var(--fs) * 1px
+  );
   font-weight: var(--fw_bold);
 }
 h4 {
-  font-size: 10px;
+  --fs: 10;
+  font-size: clamp(
+    var(--fs) * 1px / 2,
+    calc(var(--fs) / var(--base-width)) * 100vw,
+    var(--fs) * 1px
+  );
   font-weight: var(--fw_bold);
 }
 /* TEXT */
@@ -39,7 +58,8 @@ h4 {
   padding-bottom: 15px;
   display: grid;
   gap: 15px;
-  grid-template-rows: repeat(4, 190px);
+  grid-template-columns: repeat(5, calc((230 / var(--base-width)) * 100vw));
+  grid-template-rows: repeat(4, calc((190 / var(--base-width)) * 100vw));
   grid-template-areas:
     "art1 art1 art2 art3 art3"
     "art1 art1 art4 art5 art5"
@@ -52,12 +72,14 @@ h4 {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  padding-left: 20px;
-  padding-bottom: 38px;
+  padding-left: calc((20 / var(--base-width)) * 100vw);
+  padding-right: calc((79 / var(--base-width)) * 100vw);
+  padding-bottom: calc((38 / var(--base-width)) * 100vw);
   display: flex;
   flex-direction: column;
   justify-content: end;
   gap: 20px;
+  overflow: hidden;
 }
 #hero article:nth-of-type(1) {
   grid-area: art1;
@@ -94,7 +116,12 @@ h4 {
 }
 #hero article p {
   color: var(--col_txt);
-  font-size: 9px;
+  --fs: 9;
+  font-size: clamp(
+    var(--fs) * 1px / 2,
+    calc(var(--fs) / var(--base-width)) * 100vw,
+    var(--fs) * 1px
+  );
   font-weight: var(--fw_normal);
 }
 /* HERO */
@@ -114,6 +141,9 @@ h4 {
   align-items: start;
   justify-content: space-between;
   margin-bottom: 15px;
+}
+#events :nth-last-child(1) {
+  margin-bottom: 0;
 }
 #events .desc {
   display: flex;
@@ -149,7 +179,7 @@ h4 {
   color: white;
   width: 100%;
 }
-#events .text p:nth-of-type(1) {
+#events .text :nth-child(1) {
   margin-bottom: 22px;
   font-weight: var(--fw_medium);
   --fs: 12;
@@ -200,6 +230,7 @@ h4 {
 /* EXPLORE */
 #explore {
   display: flex;
+  align-items: start;
   padding-top: 45px;
   padding-bottom: 65px;
 }

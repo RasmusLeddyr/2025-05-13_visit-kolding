@@ -26,6 +26,7 @@
 }
 #nav .search {
   width: 18px;
+  flex-shrink: 0;
 }
 #nav .search img {
   width: 100%;
