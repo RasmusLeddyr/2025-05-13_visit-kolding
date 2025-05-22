@@ -12,39 +12,19 @@
 
   /* TEXT */
   h1 {
-    --fs: 45;
-    font-size: clamp(
-      var(--fs) * 1px / 2,
-      calc(var(--fs) / var(--base-width)) * 100vw,
-      var(--fs) * 1px
-    );
+    --fluid-text: 45;
     font-weight: var(--fw_bold);
   }
   h2 {
-    --fs: 32;
-    font-size: clamp(
-      var(--fs) * 1px / 2,
-      calc(var(--fs) / var(--base-width)) * 100vw,
-      var(--fs) * 1px
-    );
+    --fluid-text: 32;
     font-weight: var(--fw_bold);
   }
   h3 {
-    --fs: 16;
-    font-size: clamp(
-      var(--fs) * 1px / 2,
-      calc(var(--fs) / var(--base-width)) * 100vw,
-      var(--fs) * 1px
-    );
+    --fluid-text: 16;
     font-weight: var(--fw_bold);
   }
   h4 {
-    --fs: 18;
-    font-size: clamp(
-      var(--fs) * 1px / 2,
-      calc(var(--fs) / var(--base-width)) * 100vw,
-      var(--fs) * 1px
-    );
+    --fluid-text: 18;
     font-weight: var(--fw_bold);
   }
   /* TEXT */
@@ -69,12 +49,7 @@
     padding-bottom: calc((50 / var(--base-width)) * 100vw);
   }
   #hero article p {
-    --fs: 13;
-    font-size: clamp(
-      var(--fs) * 1px / 2,
-      calc(var(--fs) / var(--base-width)) * 100vw,
-      var(--fs) * 1px
-    );
+    --fluid-text: 13;
   }
   /* HERO */
 
@@ -101,20 +76,10 @@
     margin-right: 0;
   }
   #events .title {
-    --fs: 25;
-    font-size: clamp(
-      var(--fs) * 1px / 2,
-      calc(var(--fs) / var(--base-width)) * 100vw,
-      var(--fs) * 1px
-    );
+    --fluid-text: 25;
   }
   #events .title span {
-    --fs: 90;
-    font-size: clamp(
-      var(--fs) * 1px / 2,
-      calc(var(--fs) / var(--base-width)) * 100vw,
-      var(--fs) * 1px
-    );
+    --fluid-text: 90;
   }
   #events .text {
     max-width: 100%;
@@ -125,20 +90,10 @@
   }
   #events .text :nth-child(1) {
     margin-bottom: 22px;
-    --fs: 25;
-    font-size: clamp(
-      var(--fs) * 1px / 2,
-      calc(var(--fs) / var(--base-width)) * 100vw,
-      var(--fs) * 1px
-    );
+    --fluid-text: 25;
   }
   #events .text p:nth-of-type(2) {
-    --fs: 25;
-    font-size: clamp(
-      var(--fs) * 1px / 2,
-      calc(var(--fs) / var(--base-width)) * 100vw,
-      var(--fs) * 1px
-    );
+    --fluid-text: 25;
   }
 
   /* EVENTS */
@@ -174,12 +129,7 @@
     margin-bottom: 40px;
   }
   #explore ul p {
-    --fs: 28;
-    font-size: clamp(
-      var(--fs) * 1px / 2,
-      calc(var(--fs) / var(--base-width)) * 100vw,
-      var(--fs) * 1px
-    );
+    --fluid-text: 28;
   }
   /* EXPLORE */
 }

@@ -15,6 +15,13 @@
   color: black;
   background-color: rgba(0, 0, 0, 0);
 
+  --fluid-text: 16;
+  font-size: clamp(
+    var(--fluid-text) * 1px / 2,
+    calc(var(--fluid-text) / var(--base-width)) * 100vw,
+    var(--fluid-text) * 1px
+  );
+
   font-family: Helvetica, Arial, sans-serif;
 }
 /* DEFAULTS */

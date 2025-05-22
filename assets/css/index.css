@@ -15,39 +15,19 @@
 
 /* TEXT */
 h1 {
-  --fs: 30;
-  font-size: clamp(
-    var(--fs) * 1px / 2,
-    calc(var(--fs) / var(--base-width)) * 100vw,
-    var(--fs) * 1px
-  );
+  --fluid-text: 30;
   font-weight: var(--fw_bold);
 }
 h2 {
-  --fs: 20;
-  font-size: clamp(
-    var(--fs) * 1px / 2,
-    calc(var(--fs) / var(--base-width)) * 100vw,
-    var(--fs) * 1px
-  );
+  --fluid-text: 20;
   font-weight: var(--fw_bold);
 }
 h3 {
-  --fs: 12;
-  font-size: clamp(
-    var(--fs) * 1px / 2,
-    calc(var(--fs) / var(--base-width)) * 100vw,
-    var(--fs) * 1px
-  );
+  --fluid-text: 12;
   font-weight: var(--fw_bold);
 }
 h4 {
-  --fs: 10;
-  font-size: clamp(
-    var(--fs) * 1px / 2,
-    calc(var(--fs) / var(--base-width)) * 100vw,
-    var(--fs) * 1px
-  );
+  --fluid-text: 10;
   font-weight: var(--fw_bold);
 }
 /* TEXT */
@@ -116,12 +96,7 @@ h4 {
 }
 #hero article p {
   color: var(--col_txt);
-  --fs: 9;
-  font-size: clamp(
-    var(--fs) * 1px / 2,
-    calc(var(--fs) / var(--base-width)) * 100vw,
-    var(--fs) * 1px
-  );
+  --fluid-text: 9;
   font-weight: var(--fw_normal);
 }
 /* HERO */
@@ -152,23 +127,13 @@ h4 {
 }
 #events .title {
   color: white;
-  --fs: 15;
-  font-size: clamp(
-    var(--fs) * 1px / 2,
-    calc(var(--fs) / var(--base-width)) * 100vw,
-    var(--fs) * 1px
-  );
+  --fluid-text: 15;
   font-weight: var(--fw_medium);
 }
 #events .title span {
   /*! Ved ikke hvordan jeg får tekst til at være i toppen af dens div. */
   color: white;
-  --fs: 60;
-  font-size: clamp(
-    var(--fs) * 1px / 2,
-    calc(var(--fs) / var(--base-width)) * 100vw,
-    var(--fs) * 1px
-  );
+  --fluid-text: 60;
   font-weight: var(--fw_medium);
 }
 #events .text {
@@ -182,21 +147,11 @@ h4 {
 #events .text :nth-child(1) {
   margin-bottom: 22px;
   font-weight: var(--fw_medium);
-  --fs: 12;
-  font-size: clamp(
-    var(--fs) * 1px / 1.5,
-    calc(var(--fs) / var(--base-width)) * 100vw,
-    var(--fs) * 1px
-  );
+  --fluid-text: 12;
 }
 #events .text p:nth-of-type(2) {
   font-weight: var(--fw_normal);
-  --fs: 13;
-  font-size: clamp(
-    var(--fs) * 1px / 1.5,
-    calc(var(--fs) / var(--base-width)) * 100vw,
-    var(--fs) * 1px
-  );
+  --fluid-text: 13;
 }
 #events .event img {
   background-color: var(--col_blank);
@@ -244,12 +199,7 @@ h4 {
   max-width: calc((267 / var(--base-width)) * 100vw);
 }
 #explore article p {
-  --fs: 25;
-  font-size: clamp(
-    var(--fs) * 1px / 2,
-    calc(var(--fs) / var(--base-width)) * 100vw,
-    var(--fs) * 1px
-  );
+  --fluid-text: 25;
   font-weight: var(--fw_normal);
   max-width: calc((392 / var(--base-width)) * 100vw);
   color: var(--col_txt);
@@ -273,12 +223,7 @@ h4 {
   margin-bottom: 26px;
 }
 #explore ul p {
-  --fs: 12;
-  font-size: clamp(
-    var(--fs) * 1px / 2,
-    calc(var(--fs) / var(--base-width)) * 100vw,
-    var(--fs) * 1px
-  );
+  --fluid-text: 12;
   font-weight: var(--fw_bold);
   color: var(--col_txt);
 }
