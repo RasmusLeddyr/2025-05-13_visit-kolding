@@ -45,8 +45,7 @@
 
 /* HELPFUL FORMULAS BY RASMUS-LEDDYR
 
-DYNAMIC FONT-SIZE:
-replace "fs" variable with font size from wireframe
+DYNAMIC FONT-SIZE: (replace "fs" variable with font size from wireframe)
 --fs: 60;
 font-size: clamp(
    var(--fs) * 1px / 2,
@@ -54,8 +53,8 @@ font-size: clamp(
    var(--fs) * 1px
 );
 
-DYNAMIC WIDTH:
-replace "X" with width from wireframe
-calc(( X / var(--base-width)) * 100vw)
+
+DYNAMIC WIDTH: (replace "X" with width from wireframe)
+calc(( X / var(--base-width)) * 100vw);
   
 */

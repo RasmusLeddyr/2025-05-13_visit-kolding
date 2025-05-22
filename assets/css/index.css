@@ -203,10 +203,10 @@ h4 {
   /*! S.O.S! Den vill ikke skalere! */
   /* 
   Hader CSS.
-  Det er fuldt af problemer, og er derfor så langsomt at arbejde med.
+  Det er fuldt af problemer, og er derfor så langsomt at arbejde med. :-(
+
   Man kan ikke engang bare løse problemerne på sin egen måde, ligesom man kan i JS, 
   fordi man programmere ikke selv ting.
-
   Nej, i stedet skal man kunne huske de helt bestemte, færdiglavede løsninger,
   og hvis man ikke kender de unikke magiske ord, så er man bare screwed,
   fordi man kan jo, igen, ikke skaber sin egen løsning.
@@ -235,19 +235,12 @@ h4 {
   padding-bottom: 65px;
 }
 #explore article {
-  padding-top: 140px;
-  padding-bottom: 95px;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-right: auto;
 }
 #explore article h1 {
   margin-bottom: 26px;
-  --fs: 30;
-  font-size: clamp(
-    var(--fs) * 1px / 2,
-    calc(var(--fs) / var(--base-width)) * 100vw,
-    var(--fs) * 1px
-  );
-  font-weight: var(--fw_bold);
   max-width: calc((267 / var(--base-width)) * 100vw);
 }
 #explore article p {
@@ -280,12 +273,20 @@ h4 {
   margin-bottom: 26px;
 }
 #explore ul p {
-  font-size: 12px;
+  --fs: 12;
+  font-size: clamp(
+    var(--fs) * 1px / 2,
+    calc(var(--fs) / var(--base-width)) * 100vw,
+    var(--fs) * 1px
+  );
   font-weight: var(--fw_bold);
   color: var(--col_txt);
 }
 /* EXPLORE */
 
+/* MAP */
 #map {
   width: 100%;
+  display: block; /* To remove gap */
 }
+/* MAP */

@@ -145,59 +145,41 @@
 
   /* EXPLORE */
   #explore {
-    display: flex;
-    padding-top: 45px;
-    padding-bottom: 65px;
+    padding-top: 75px;
+    padding-bottom: 100px;
+    flex-direction: column;
+    align-items: center;
   }
   #explore article {
-    padding-top: 140px;
-    padding-bottom: 95px;
-    margin-right: calc((95 / var(--base-width)) * 100%);
-  }
-  #explore article h1 {
-    margin-bottom: 26px;
-    --fs: 30;
-    font-size: clamp(
-      var(--fs) * 1px / 2,
-      calc(var(--fs) / var(--base-width)) * 100vw,
-      var(--fs) * 1px
-    );
-    font-weight: var(--fw_bold);
-    max-width: calc((267 / var(--base-width)) * 100vw);
-  }
-  #explore article p {
-    --fs: 25;
-    font-size: clamp(
-      var(--fs) * 1px / 2,
-      calc(var(--fs) / var(--base-width)) * 100vw,
-      var(--fs) * 1px
-    );
-    font-weight: var(--fw_normal);
-    max-width: calc((392 / var(--base-width)) * 100vw);
-    color: var(--col_txt);
-  }
-  #explore ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px 15px;
-  }
-  #explore ul li {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  #explore article h1 {
+    margin-bottom: 23px;
+    max-width: calc((401 / var(--base-width)) * 100vw);
+  }
+  #explore article p {
+    max-width: calc((530 / var(--base-width)) * 100vw);
+  }
+  #explore ul {
+    grid-gap: 72px 23px;
+    grid-template-columns: repeat(3, calc((352 / var(--base-width)) * 100vw));
+  }
   #explore ul img {
-    width: 229px;
-    height: 190px;
-    background-color: var(--col_blank);
-    padding: 16px;
-    box-sizing: border-box;
-    margin-bottom: 26px;
+    height: calc((292 / var(--base-width)) * 100vw);
+    margin-bottom: 40px;
   }
   #explore ul p {
-    font-size: 12px;
-    font-weight: var(--fw_bold);
-    color: var(--col_txt);
+    --fs: 28;
+    font-size: clamp(
+      var(--fs) * 1px / 2,
+      calc(var(--fs) / var(--base-width)) * 100vw,
+      var(--fs) * 1px
+    );
   }
   /* EXPLORE */
 }
